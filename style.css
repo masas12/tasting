@@ -1,0 +1,91 @@
+body {
+    margin: 0 auto;
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template: 
+        "... ...... ...... ...... ...... ...... ..." 10px
+        "... header header header header header ..." 100px
+        "... ...... ...... ...... ...... ...... ..." 10px
+        "... nav    ...... main   ...... aside  ..." 1fr
+        "... ...... ...... ...... ...... ...... ..." 10px
+        "... footer footer footer footer footer ..." 200px
+        "... ...... ...... ...... ...... ...... ..." 10px
+        /10px 150px 10px minmax(300px, 1fr) 10px 200px 10px;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+.list-items {
+    list-style: none;
+    padding: 0;
+}
+
+.list-item {
+    margin: 5px;
+    height: 120px;
+    background-color: #aecde293;
+}
+.list-item p {
+    margin: 0 10px 20px 10px;
+}
+.scores {
+    display: flex;
+    justify-content: space-around;
+}
+.scores input {
+    height: 15px;
+    width: 15px;
+}
+
+.score-label {
+    display: flex;
+    justify-content: space-around;
+}
+.score-label span {
+    width: 15px;
+    text-align: center;
+}
+.comment {
+    height: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+.comment input {
+    height: 100%;
+    width: 100%;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        grid-template:
+            "......" 10px
+            "header" 50px
+            "......" 10px
+            "nav   " 50px
+            "......" 10px
+            "main  " 1fr
+            "......" 10px
+            "aside " 50px
+            "......" 10px
+            "footer" 200px
+            "......" 10px;
+    }
+}
