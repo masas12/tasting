@@ -1,13 +1,15 @@
 body {
     margin: 0 auto;
+    color: darkslategray;
     width: 100vw;
     min-height: 100vh;
+    background-color: azure;
     display: grid;
     grid-template: 
+        "... ...... ...... ...... ...... ...... ..." 5px
+        "... header header header header header ..." 
         "... ...... ...... ...... ...... ...... ..." 10px
-        "... header header header header header ..." 100px
-        "... ...... ...... ...... ...... ...... ..." 10px
-        "... nav    ...... main   ...... aside  ..." 1fr
+        "... ...... ...... main   ...... aside  ..." 1fr
         "... ...... ...... ...... ...... ...... ..." 10px
         "... footer footer footer footer footer ..." 200px
         "... ...... ...... ...... ...... ...... ..." 10px
@@ -16,10 +18,19 @@ body {
 
 header {
     grid-area: header;
+    font-size: 24px;
+    color: #e9e9e9;
+    width: 100vw;
+    text-align: center;
+    background-color: #0855a1c5;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: fixed;
 }
 
-nav {
-    grid-area: nav;
+header p {
+    margin: 0;
+
 }
 
 main {
@@ -32,37 +43,53 @@ main {
 
 .list-item {
     margin: 5px;
-    height: 120px;
-    background-color: #aecde293;
+    height: auto;
+    border: cadetblue solid 1px;
+    border-radius: 5px;
+    background-color: #fbfdff;
 }
-.list-item p {
-    margin: 0 10px 20px 10px;
+
+.sample-info {
+    font-size: 15px;
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.info {
+    margin-right: 10px;
 }
 .scores {
+    margin-top: 20px;
     display: flex;
     justify-content: space-around;
 }
-.scores input {
+.score {
     height: 15px;
     width: 15px;
+    margin: 10px 0 0 0;
 }
 
 .score-label {
     display: flex;
     justify-content: space-around;
 }
-.score-label span {
+.score-label div {
     width: 15px;
     text-align: center;
 }
 .comment {
-    height: 20px;
-    width: 90%;
-    margin: 0 auto;
+    height: 30px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px
+    ;
 }
 .comment input {
-    height: 100%;
-    width: 100%;
+    height: 20px;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
 }
 
 aside {
@@ -76,10 +103,7 @@ footer {
 @media screen and (max-width: 500px) {
     body {
         grid-template:
-            "......" 10px
             "header" 50px
-            "......" 10px
-            "nav   " 50px
             "......" 10px
             "main  " 1fr
             "......" 10px
