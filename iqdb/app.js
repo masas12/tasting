@@ -2,13 +2,13 @@ if (!navigator.mediaDevices) {
     document.querySelector('#js-unsupported').classList.add('is-show')
 }
 
-const video  = document.querySelector('#js-video')
+const camera  = document.querySelector('#js-video')
 const canvas = document.querySelector('#js-canvas')
 const ctx    = canvas.getContext('2d')
 
 const checkImage = () => {
     // 取得している動画をCanvasに描画
-    ctx.drawImage(video, 0, 0, canvas.width, canvas.height)
+    ctx.drawImage(camera, 0, 0, canvas.width, canvas.height)
 
     // Canvasからデータを取得
     const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height)
@@ -47,9 +47,9 @@ navigator.mediaDevices
         }
     })
     .then(function(stream) {
-        video.srcObject = stream
-        video.onloadedmetadata = function(e) {
-            video.play()
+        camera.srcObject = stream
+        camera.onloadedmetadata = function(e) {
+            camera.play()
             checkImage()
         }
     })
