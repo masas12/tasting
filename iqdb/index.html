@@ -11,6 +11,12 @@
     <title>IQDB-Menu</title>
     <!-- ウェブアプリマニフェストの読み込み -->
     <link rel="manifest" href="manifest.json">
+    <!-- ServiceWorkerの登録 -->
+    <script>
+        if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('sw.js');
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -37,11 +43,5 @@
         <div class="footer-message">
             歩きスマホは絶対にやめましょう。
         </div>
-    <!-- ServiceWorkerの登録 -->
-    <script>
-        if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('sw.js');
-        }
-    </script>
 </body>
 </html>
