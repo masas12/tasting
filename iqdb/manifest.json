@@ -7,7 +7,7 @@
   "scope": "/",
   "start_url": "https://masas12.github.io/tasting/iqdb/index.html",
     "icons": [{
-          "src": "/tasting/iqdb/icon/iqdb_icon_192×192.png",
+          "src": "tasting/iqdb/icon/iqdb_icon_192×192.png",
           "sizes":"192x192",
           "type": "image/png"
         },
