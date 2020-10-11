@@ -6,4 +6,4 @@ p.then(function(stream) {
    video.onloadedmetadata = function(e) {
       // Do something with the video here.
    };
-}
+)};
