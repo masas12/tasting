@@ -40,10 +40,7 @@ document.querySelector('#js-modal-close')
 navigator.mediaDevices
     .getUserMedia({
          audio: false,
-//     「exact: 'environment」'ではなく「'user'」にするとPCで使用できる
-               video:
-                true
-           
+         video: true
     })
     .then(function(stream) {
         video.srcObject = stream
