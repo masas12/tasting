@@ -30,6 +30,7 @@ footer {
     width: 100%;
     height: auto;
     min-height: 40px;
+    font-size: 12px;
     color: var(--footer-color);
     background-color: var(--footer-back-color);
     padding: 10px 10px 10px 0;
