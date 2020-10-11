@@ -22,8 +22,16 @@
     <main>
         <div class="menu"><span></span>
         </div>
-        <video autoplay="true" id="video"></video>
-        <div>camera</div>
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <video
+                :width="width"
+                :height="height"
+                autoplay/>
+            </div>
+           </div>
+         </div>
     </main>
     <footer>
         <div class="footer-message">
