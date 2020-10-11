@@ -52,7 +52,7 @@ navigator.mediaDevices
             video.play()
             checkImage()
         }
-//     })
-//     .catch(function(err) {
-//         alert('Error!!')
+    })
+    .catch(function(err) {
+        alert('Error!!')
     })
