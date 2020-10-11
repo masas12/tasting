@@ -1,7 +1,77 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="SHIFT-JIF">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../default.css">
+<!--     <link rel="stylesheet" href="search.css"> -->
+    <link rel="stylesheet" href="../root.css">
+    <link rel="stylesheet" href="../qr_reader.css">
+
+    <title>IQDB-QRコードリーダー</title>
+    
+    <!-- ウェブアプリマニフェストの読み込み -->
+    <link rel="manifest" href="../manifest.json">
+    <!-- ServiceWorkerの登録 -->
+    <script>
+        if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('../sw.js');
+        }
+    </script>
+</head>
 <body>
-  <div>
-    作成中
-  </div>
+    <header>
+        <div class="title">QRcode-Reader</div>
+    </header>
+    <div class="top-wrapper">
+    </div>
+    <main>
+        <div class="reader">
+          <video id="js-video" class="reader-video" autoplay playsinline></video>
+        </div>
+
+        <div style="display:none">
+          <canvas id="js-canvas"></canvas>
+        </div>
+
+        <div id="js-modal" class="modal-overlay">
+          <div class="modal">
+            <div class="modal-cnt">
+              <span class="modal-title">読み取り結果</span>
+              <span id="js-result" class="modal-result"></span>
+            </div>
+            <a href="" id="js-link" class="modal-btn" target="_blank">開く</a>
+            <button type="button" id="js-modal-close" class="modal-btn">閉じる</button>
+          </div>
+        </div>
+
+<div id="js-unsupported" class="unsupported">
+  <p class="unsupported-title">Sorry!</p>
+  <p>Unsupported browser</p>
+</div>
+
+<script src="../jsQR.js"></script>
+<script src="../qr_reader.js"></script>
+    </main>
+    <footer>
+        <div class="footer-message">
+            歩きスマホは絶対にやめましょう。
+        </div>
+    </footer>
 </body>
 </html>
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+
