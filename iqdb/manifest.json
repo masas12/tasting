@@ -1,0 +1,14 @@
+{
+  "name": "IQDB",
+  "short_name": "IQDB",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "https://masas12.github.io/tasting/iqdb/",
+    "icons": [{
+        "src": "/icon/icon-iqdb.png",
+        "sizes":"512x512",
+        "type": "image/png"
+      }]
+  }

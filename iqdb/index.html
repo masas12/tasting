@@ -18,14 +18,6 @@
     <!-- ウェブアプリマニフェストの読み込み -->
     <link rel="manifest" href="manifest.json">
     <!-- ServiceWorkerの登録 -->
-    <script>
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('sw.js')
-        .then((reg) => {
-            console.log('Service worker registered.', reg);
-        });
-    }
-    </script>
     <title>IQDB-Menu</title>
 </head>
 <body>
@@ -54,5 +46,6 @@
             歩きスマホは絶対にやめましょう。
         </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
