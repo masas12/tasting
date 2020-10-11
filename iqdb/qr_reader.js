@@ -1,8 +1,10 @@
-let p = navigator.mediaDevices.getUserMedia({ audio: false, video: true });
+const video = document.querySelector("video");
+let canv = document.querySelector("canvas");
 
-p.then(function(stream) {
-   document.querySelector("video").srcObject = mediaStream;
-   video.onloadedmetadata = function(e) {
-      // Do something with the video here.
-   };
-});
+const context = canv.getContext("2d");
+context.drawImage(video, 0, 0, this.width, this.height);
+const imageData = context.getImageData(0, 0, this.width, this.height);
+const code = jsQR(imageData.data, imageData.width, imageData.height);
+if (code) {
+  console.log("Found QR code", code, code.data);
+}
