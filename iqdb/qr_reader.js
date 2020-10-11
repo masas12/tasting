@@ -41,10 +41,10 @@ navigator.mediaDevices
     .getUserMedia({
          audio: false,
          video: {
-             facingMode: 'user', 
-                {
-                exact: 'environment'
-                }
+             facingMode: 'user'
+//                 , {
+//                 exact: 'environment'
+//                 }
            }
     })
     .then(function(stream) {
