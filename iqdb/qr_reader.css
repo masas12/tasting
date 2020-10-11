@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+header {
+    margin-bottom: 100px;   
+}
+
 .reader {
     width: 100vw;
     height: 100%;
