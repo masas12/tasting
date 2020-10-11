@@ -40,11 +40,12 @@ document.querySelector('#js-modal-close')
 navigator.mediaDevices
     .getUserMedia({
          audio: false,
-         video: {
-             facingMode: {
-                exact: 'environment'
-            }
-         }
+         video: true
+//     {
+//              facingMode: {
+//                 exact: 'environment'
+//             }
+//          }
     })
     .then(function(stream) {
         video.srcObject = stream
