@@ -8,6 +8,13 @@ html {
     height: 100%;
 }
 
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 main {
     display: flex;
     flex-direction: column;
