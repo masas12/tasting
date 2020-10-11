@@ -4,7 +4,7 @@
   "theme_color": "#f1f8fd",
   "background_color": "#f1f8fd",
   "display": "standalone",
-  "scope": "/tasting/iqdb",
+  "scope": "/tasting/iqdb/",
   "start_url": "./index.html",
     "icons": [{
           "src": "icon/iqdb_icon_192×192.png",
