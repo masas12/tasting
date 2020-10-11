@@ -5,7 +5,7 @@
   "background_color": "#2196f3",
   "display": "standalone",
   "scope": "/",
-  "start_url": "https://masas12.github.io/tasting/iqdb/",
+  "start_url": "https://masas12.github.io/tasting/iqdb/index.html",
     "icons": [{
           "src": "/icon/iqdb_icon_192×192.png",
           "sizes":"192x192",
