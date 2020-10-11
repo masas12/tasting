@@ -43,7 +43,8 @@ navigator.mediaDevices
 //     「exact: 'environment」'ではなく「'user'」にするとPCで使用できる
                video:{
                 facingMode: {
-                exact: 'environment'
+//                 exact: 
+                    'user'
             }
        }
     })
