@@ -40,9 +40,12 @@ document.querySelector('#js-modal-close')
 navigator.mediaDevices
     .getUserMedia({
          audio: false,
-               video: {
-            facingMode: 'user'
-        }
+//     「exact: 'environment」'ではなく「'user'」にするとPCで使用できる
+               video:{
+                facingMode: {
+                exact: 'environment'
+            }
+       }
     })
     .then(function(stream) {
         video.srcObject = stream
@@ -50,7 +53,7 @@ navigator.mediaDevices
             video.play()
             checkImage()
         }
-//     })
-//     .catch(function(err) {
-//         alert('Error!!')
+    })
+    .catch(function(err) {
+        alert('Error!!')
     })
