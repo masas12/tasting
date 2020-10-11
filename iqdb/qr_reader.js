@@ -42,9 +42,7 @@ navigator.mediaDevices
          audio: false,
 //     「exact: 'environment」'ではなく「'user'」にするとPCで使用できる
                video:{
-                facingMode: {
-                    exact: 'environment'
-                }
+                facingMode: 'user'
            }
     })
     .then(function(stream) {
