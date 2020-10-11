@@ -39,5 +39,13 @@
             歩きスマホは絶対にやめましょう。
         </div>
     </footer>
+    <!-- ServiceWorkerの登録 -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener("load", function() {
+                navigator.serviceWorker.register('tasting/iqdb/sw.js');
+            });
+        }
+    </script>
 </body>
 </html>
