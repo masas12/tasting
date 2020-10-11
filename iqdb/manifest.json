@@ -1,7 +1,7 @@
 {
   "name": "IQDB",
   "short_name": "IQDB",
-  "theme_color": "#2196f3",
+  "theme_color": "#f1f8fd",
   "background_color": "#f1f8fd",
   "display": "standalone",
   "scope": "/",
