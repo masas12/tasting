@@ -41,9 +41,9 @@ navigator.mediaDevices
     .getUserMedia({
          audio: false,
 //     「exact: 'environment」'ではなく「'user'」にするとPCで使用できる
-               video:{
-                facingMode: 'user'
-           }
+               video:
+                true
+           
     })
     .then(function(stream) {
         video.srcObject = stream
