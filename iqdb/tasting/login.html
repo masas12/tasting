@@ -11,6 +11,12 @@
     <title>IQDB-利き酒ログイン</title>
     <!-- ウェブアプリマニフェストの読み込み -->
     <link rel="manifest" href="../manifest.json">
+    <!-- ServiceWorkerの登録 -->
+    <script>
+        if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('../sw.js');
+        }
+    </script>
 </head>
 <body>
     <main>
@@ -51,11 +57,5 @@
         </p>
     </form>
     </main> 
-    <!-- ServiceWorkerの登録 -->
-    <script>
-        if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('../sw.js');
-        }
-    </script>
 </body>
 </html>
