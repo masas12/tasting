@@ -41,13 +41,11 @@ navigator.mediaDevices
     .getUserMedia({
          audio: false,
          video: {
-             facingMode: 
-                 'user",
-                    {
+             facingMode: 'user', 
+                {
                 exact: 'environment'
                 }
            }
-        }
     })
     .then(function(stream) {
         video.srcObject = stream
