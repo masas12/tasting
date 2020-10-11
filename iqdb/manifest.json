@@ -1,8 +1,8 @@
 {
   "name": "品質総合データベースシステム",
   "short_name": "IQDB",
-  "theme_color": "#f1f8fd",
-  "background_color": "#f1f8fd",
+  "theme_color": "#f0f0f0",
+  "background_color": "#f0f0f0",
   "display": "standalone",
   "scope": "/tasting/iqdb/",
   "start_url": "./index.html",
