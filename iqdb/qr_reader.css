@@ -12,6 +12,11 @@ html {
     height: 100%;
 }
 
+main {
+    display: flex;
+    align-items: center;
+}
+
 .reader {
     width: 100vw;
     height: 100%;
