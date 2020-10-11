@@ -1,11 +1,9 @@
-// On Streaming
-const startStreamingVideo = () => {
-  const video = document.querySelector( "#video" );
-  if( navigator.mediaDevices.getUserMedia ){
-    navigator.mediaDevices.getUserMedia( { video: true } )
-    .then( ( stream ) => {
-        video.srcObject = stream;
-    } );
-  }
-}
-startStreamingVideo();
+let p = navigator.mediaDevices.getUserMedia({ audio: false, video: true });
+
+p.then(function(stream) {
+   var video = document.querySelector('video');
+   video.src = window.URL.createObjectURL(mediaStream);
+   video.onloadedmetadata = function(e) {
+      // Do something with the video here.
+   };
+};
