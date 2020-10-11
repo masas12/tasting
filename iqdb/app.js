@@ -19,3 +19,15 @@ const checkImage = () => {
         setTimeout(() => { checkImage() }, 200)
     }
 }
+
+const openModal = function(url) {
+    document.querySelector('#js-result').innerText = url
+    document.querySelector('#js-link').setAttribute('href', url)
+    document.querySelector('#js-modal').classList.add('is-show')
+}
+
+document.querySelector('#js-modal-close')
+    .addEventListener('click', () => {
+        document.querySelector('#js-modal').classList.remove('is-show')
+        checkImage()
+    })
