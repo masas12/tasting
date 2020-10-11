@@ -1,5 +1,10 @@
+if (!navigator.mediaDevices) {
+    document.querySelector('#js-unsupported').classList.add('is-show')
+}
+
+const video  = document.querySelector('#js-video')
 const canvas = document.querySelector('#js-canvas')
-const ctx = canvas.getContext('2d')
+const ctx    = canvas.getContext('2d')
 
 const checkImage = () => {
     // 取得している動画をCanvasに描画
@@ -30,4 +35,24 @@ document.querySelector('#js-modal-close')
     .addEventListener('click', () => {
         document.querySelector('#js-modal').classList.remove('is-show')
         checkImage()
+    })
+
+navigator.mediaDevices
+    .getUserMedia({
+        audio: false,
+        video: {
+            facingMode: {
+                exact: 'environment'
+            }
+        }
+    })
+    .then(function(stream) {
+        video.srcObject = stream
+        video.onloadedmetadata = function(e) {
+            video.play()
+            checkImage()
+        }
+    })
+    .catch(function(err) {
+        alert('Error!!')
     })
