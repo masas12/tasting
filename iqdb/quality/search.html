@@ -11,7 +11,13 @@
 
     <title>IQDB-品質データ検索</title>
     <!-- ウェブアプリマニフェストの読み込み -->
-    <link rel="manifest" href="../manifest.json">
+    <link rel="manifest" href="../manifest.json
+    <!-- ServiceWorkerの登録 -->
+    <script>
+        if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('../sw.js');
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -28,11 +34,5 @@
             歩きスマホは絶対にやめましょう。
         </div>
     </footer>
-    <!-- ServiceWorkerの登録 -->
-    <script>
-        if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('../sw.js');
-        }
-    </script>
 </body>
 </html>
