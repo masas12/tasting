@@ -3,18 +3,18 @@
 <head>
     <meta charset="SHIFT-JIF">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" href="../icon/iqdb_icon_512×512.png">
-    <link rel="stylesheet" href="../default.css">
-    <link rel="stylesheet" href="login.css">
+    <link rel="apple-touch-icon" href="/icon/iqdb_icon_512×512.png">
+    <link rel="stylesheet" href="/default.css">
+    <link rel="stylesheet" href="/login.css">
 
-    <link rel="stylesheet" href="../root.css">
+    <link rel="stylesheet" href="/root.css">
     <title>IQDB-利き酒ログイン</title>
     <!-- ウェブアプリマニフェストの読み込み -->
-    <link rel="manifest" href="../manifest.json">
+    <link rel="manifest" href="/manifest.json">
 </head>
 <body>
     <main>
-    <form action="tasting.asp" method="post" name="my-form">        
+    <form action="#" method="post" name="my-form">        
         <div class="title">ログイン</div>
         <div class="container">
             <label for="license">免許地</label>
@@ -55,7 +55,7 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener("load", function() {
-                navigator.serviceWorker.register('../sw.js');
+                navigator.serviceWorker.register('/sw.js');
             });
         }
     </script>
