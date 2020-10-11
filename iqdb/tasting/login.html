@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- ファビコン -->
+    <link rel="icon" href="../icon/favicon.ico">
+    
+    <!-- スマホ用アイコン -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+
+    <meta charset="SHIFT-JIF">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../default.css">
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="stylesheet" href="../root.css">
+    <title>IQDB-利き酒ログイン</title>
+</head>
+<body>
+    <main>
+    <form action="tasting.asp" method="post" name="my-form">        
+        <div class="title">ログイン</div>
+        <div class="container">
+            <label for="license">免許地</label>
+            <br>
+            <div class="license-group">
+                <div>
+                    <input type="radio" value="01" name="license" required="required">
+                    <label >内蔵</label>
+                </div>
+                <div>
+                    <input type="radio" value="05" name="license" required="required">
+                    <label >昭和蔵</label>
+                </div>
+                <div>
+                    <input type="radio" value="07" name="license" required="required">
+                    <label >大手蔵</label>
+                </div>
+                <div>
+                    <input type="radio" value="08" name="license" required="required">
+                    <label >研究所</label>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <label for="employee">社員コード</label>
+            <br>
+            <input class="employee" type="number" placeholder="#####" name="employee" min="1" max="99999" required="required">
+            <br>
+        </div>
+        <div class="container">
+            <input class="submit" type="submit" value="START">
+        </div>
+        </p>
+    </form>
+    </main> 
+</body>
+</html>
