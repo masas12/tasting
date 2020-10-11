@@ -4,7 +4,7 @@
     --font-sub-color: #c3c7d6;
     
     --main-color: var(--font-dark-color);
-    --main-back-color: #dddddd;
+    --main-back-color: #f0f0f0;
     --header-color: var(--font-light-color);
     --header-back-color: #217ca3;
     --footer-color: var(--font-light-color);
