@@ -50,5 +50,13 @@
         </p>
     </form>
     </main> 
+    <!-- ServiceWorkerの登録 -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener("load", function() {
+                navigator.serviceWorker.register('../sw.js');
+            });
+        }
+    </script>
 </body>
 </html>
