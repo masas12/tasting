@@ -29,8 +29,8 @@ main {
 
 .reader-video {
     background-color: #000;
-    width: 200%;
-    height: 200%;
+    width: 100%;
+    height: 100%;
     object-fit: fill;
 }
 
