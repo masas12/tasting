@@ -42,6 +42,7 @@ navigator.mediaDevices
          audio: false,
          video: {
              facingMode: 'environment'
+         }
     })
     .then(function(stream) {
         video.srcObject = stream
