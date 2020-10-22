@@ -8,13 +8,13 @@ const ctx    = canvas.getContext('2d')
 
 const checkImage = () => {
     // 取得している動画をCanvasに描画
-    ctx.drawImage(video, 0, 0, 200, 200)
+    ctx.drawImage(video, 0, 0, 2000, 2000)
 
     // Canvasからデータを取得
-    const imageData = ctx.getImageData(0, 0, 200, 200)
+    const imageData = ctx.getImageData(0, 0, 2000, 2000)
 
     // jsQRに渡す
-    const code = jsQR(imageData.data, 200, 200)
+    const code = jsQR(imageData.data, 2000, 2000)
 
     // QRコードの読み取りに成功したらモーダル開く
     // 失敗したら再度実行
