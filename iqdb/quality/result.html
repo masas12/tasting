@@ -59,7 +59,7 @@
                     <div class="container" name="date">
                         <label for="sample-date">検索日</label>
                         <br>
-                        <input class="sample-date input-box" id="sample-date" type="text" name="sample-date">
+                        <input class="sample-date input-box" id="sample-date" type="text" placeholder="日付範囲（1日の場合は2回選択）" name="sample-date">
                         <script>
                             const config = {
                                 disableMobile: "true",
@@ -76,13 +76,13 @@
                     <div class="container" name="tank">
                         <label for="tank-number">タンクNo</label>
                         <br>
-                        <input class="tank-number input-box" type="number" placeholder="####" name="tank-number" min="1" max="9999">
+                        <input class="tank-number input-box" type="number" name="tank-number" placeholder="0000" min="1" max="9999">
                         <br>
                     </div>
                     <div class="container" name="material">
                         <label for="material-code">品目コード</label>
                         <br>
-                        <input class="material-code input-box" type="number" placeholder="######" name="tank-number" min="1" max="999999">
+                        <input class="material-code input-box" type="number" name="tank-number" placeholder="000000" min="1" max="999999">
                         <br>
                     </div>
                     <div class="container" name="submit">

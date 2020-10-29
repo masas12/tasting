@@ -38,7 +38,7 @@ header {
     height: 3px;/*線の太さ*/
     width: 25px;/*長さ*/
     border-radius: 3px;
-    background: #555;
+    background: var(--font-sub-color);
     display: block;
     content: '';
     cursor: pointer;
@@ -163,12 +163,16 @@ form {
 .input-box {
     width: 100%;
     height: 30px;
-    font-size: 20px;
+    font-size: 16px;
     padding: 1px 10px;
     box-sizing: border-box;
     background-color: var(--footer-color);
     border : var(--footer-back-color) solid 1px;
     border-radius: 2px;
+}
+
+::placeholder {
+	color: var(--font-sub-color);
 }
 
 .submit {
