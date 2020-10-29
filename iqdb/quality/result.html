@@ -76,20 +76,20 @@
                     <div class="container" name="tank">
                         <label for="tank-number">タンクNo</label>
                         <br>
-                        <input class="tank-number input-box" type="number" name="tank-number" placeholder="0000" min="1" max="9999">
+                        <input class="tank-number input-box" type="number" name="tank-number" placeholder="先頭の0は省略可" min="1" max="9999">
                         <br>
                     </div>
                     <div class="container" name="material">
                         <label for="material-code">品目コード</label>
                         <br>
-                        <input class="material-code input-box" type="number" name="tank-number" placeholder="000000" min="1" max="999999">
+                        <input class="material-code input-box" type="number" name="tank-number" placeholder="先頭の0は省略可" min="1" max="999999">
                         <br>
                     </div>
                     <div class="container" name="process">
                         <label for="process">工程</label>
                         <br>
                         <select class="process" name="process" size="1" placeholder="工程">
-                            <option value="NULL">指定なし</option>
+                            <option value="NULL">すべて</option>
                             <option value="000">検定</option>
                             <option value="011">濾過</option>
                             <option value="021">火入れ</option>
@@ -106,6 +106,12 @@
                             <option value="000">検定</option>
                             <option value="011">濾過</option>
                         </select>
+                        <br>
+                    </div>
+                    <div class="container" name="count">
+                        <label for="record-count">表示件数</label>
+                        <br>
+                        <input class="record-count input-box" type="number" name="record-count" value="10" min="1" max="100">
                         <br>
                     </div>
                     <div class="container" name="submit">
