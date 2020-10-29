@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+    <!-- ファビコン -->
+    <link rel="icon" href="../icon/favicon.ico">
+    
+    <!-- スマホ用アイコン -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../default.css">
+    <link rel="stylesheet" href="../root.css">
+    <link rel="stylesheet" href="result.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/material_blue.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    
+    <!-- 日本語の言語ファイル -->
+    <script src="https://unpkg.com/flatpickr/dist/l10n/ja.js"></script>
+
+    <title>IQDB-品質データ閲覧</title>
+</head>
+<body>
+    <header>
+        <div class="dummy"></div>
+        <div class="title">品質データ検索</div> 
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown" checked="checked">
+            <label id="nav-open" for="nav-input"><span></span></label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+                <div class="condition-title">検索条件</div>
+                <form action="tasting.asp" method="post" name="my-form">    
+                    <div class="container" name="license">
+                        <label for="license">免許地</label>
+                        <br>
+                        <div class="license-group">
+                            <div>
+                                <input type="radio" value="01" name="license" required="required">
+                                <label >内蔵</label>
+                            </div>
+                            <div>
+                                <input type="radio" value="05" name="license" required="required">
+                                <label >昭和蔵</label>
+                            </div>
+                            <div>
+                                <input type="radio" value="07" name="license" required="required">
+                                <label >大手蔵</label>
+                            </div>
+                            <div>
+                                <input type="radio" value="08" name="license" required="required">
+                                <label >研究所</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container" name="date">
+                        <label for="sample-date">検索日</label>
+                        <br>
+                        <input class="sample-date input-box" id="sample-date" type="text" name="sample-date">
+                        <script>
+                            const config = {
+                                disableMobile: "true",
+                                dateFormat: "Y-m-d",
+                                defaulDate: "today",
+                                mode: "range",
+                                maxDate: "today",
+                                locale: "ja"
+                                }
+                                flatpickr('#sample-date', config);
+                        </script>
+                        <br>
+                    </div>
+                    <div class="container" name="tank">
+                        <label for="tank-number">タンクNo</label>
+                        <br>
+                        <input class="tank-number input-box" type="number" placeholder="####" name="tank-number" min="1" max="9999">
+                        <br>
+                    </div>
+                    <div class="container" name="material">
+                        <label for="material-code">品目コード</label>
+                        <br>
+                        <input class="material-code input-box" type="number" placeholder="######" name="tank-number" min="1" max="999999">
+                        <br>
+                    </div>
+                    <div class="container" name="submit">
+                        <input class="submit" type="submit" value="表示する">
+                    </div>
+                </form>  
+            </div>
+        </div>
+    </header>
+    <main>
+        メニューから<br>条件を指定してください
+    </main>
+    <footer>
+        <div class="footer-message">
+            歩きスマホは絶対にやめましょう。
+        </div>
+    </footer>
+</body>
+</html>
