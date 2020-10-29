@@ -175,6 +175,17 @@ form {
 	color: var(--font-sub-color);
 }
 
+.process {
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    padding: 1px 10px;
+    box-sizing: border-box;
+    background-color: var(--footer-color);
+    border : var(--footer-back-color) solid 1px;
+    border-radius: 2px;
+}
+
 .submit {
     width: 100%;
     font-size: 16px;

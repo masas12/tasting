@@ -85,6 +85,17 @@
                         <input class="material-code input-box" type="number" name="tank-number" placeholder="000000" min="1" max="999999">
                         <br>
                     </div>
+                    <div class="container" name="process">
+                        <label for="process">工程</label>
+                        <br>
+                        <select class="process" name="process" size="1" placeholder="工程">
+                            <option value="NULL">指定なし</option>
+                            <option value="000">検定</option>
+                            <option value="011">濾過</option>
+                            <option value="021">火入れ</option>
+                        </select>
+                        <br>
+                    </div>
                     <div class="container" name="submit">
                         <input class="submit" type="submit" value="表示する">
                     </div>
@@ -93,7 +104,7 @@
         </div>
     </header>
     <main>
-        メニューから<br>条件を指定してください
+        <br>条件を指定して、<br>「表示する」を押してください
     </main>
     <footer>
         <div class="footer-message">
