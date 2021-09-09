@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <head>
   <style>
-  * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    min-height: auto;
-    overflow: hidden;
-  }
-  
-  iframe {
-    border:none;
-    width:100%;
-    height:100vh;
-  }
+    .iframe-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .iframe-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   </style>
 </head>
 <html>
   <body>
-    <iframe src="https://script.google.com/macros/s/AKfycbyT9FIT3c9XU4IzUlMxSAdsKjG_iyzMpDfM6hNtDvKI7JvOFSnFhUsJSNfxK85NS4ULAA/exec?type=record&employee=57950&license=%E6%98%AD%E5%92%8C%E8%94%B5&group=All" name="tasting"></textarea>
+    <div class="iframe-wrapper">/iframe>
+      <iframe src="https://script.google.com/macros/s/AKfycbyT9FIT3c9XU4IzUlMxSAdsKjG_iyzMpDfM6hNtDvKI7JvOFSnFhUsJSNfxK85NS4ULAA/exec?type=record&employee=57950&license=%E6%98%AD%E5%92%8C%E8%94%B5&group=All" name="tasting"></iframe>
+    </div>
   </body>
 </html>
