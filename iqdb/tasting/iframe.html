@@ -17,6 +17,7 @@
           position: absolute;
           top:      0px;
           width:    100%;
+  background-color: #333;
       }
 .spinner {
   margin: auto;
@@ -28,7 +29,7 @@
 }
 
 .spinner > div {
-  background-color: #333;
+  background-color: #ffffff;
   height: 100%;
   width: 6px;
   display: inline-block;
@@ -77,12 +78,14 @@
           position: absolute;
           top:      0px;
           width:    100%;
-    background-color: lightskyblue;
+    background-color: 333;
+      z-index: 10;
     /* 環境によって「z-index」追加 */
 }
 /* 読み込み完了後に「loaded」を付与する */
 #loader.loaded {
     animation: fadeOut 3s forwards;
+      z-index: -1;
 }
   </style>
 </head>
