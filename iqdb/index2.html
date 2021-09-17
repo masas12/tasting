@@ -234,7 +234,7 @@
       const videoDevices = devices.filter(device => device.kind === 'videoinput');
       let options = '';
       for (var i=0;i<videoDevices.length;i++){
-        options += '<option value="' + videoDevices[i].deviceId + '">' + videoDevices[i].label + '</option>"';
+        options += '<option value="' + videoDevices[i].deviceId + '">' + videoDevices[i].label + '</option>';
       }
     
       cameraOptions.innerHTML = options;
